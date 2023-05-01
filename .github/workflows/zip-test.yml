@@ -25,7 +25,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Test
-        path: ../Test.zip
+        path: /home/runner/work/jv98289v890j/Test.zip
   build-windows:
     runs-on: windows-latest
     steps:
@@ -48,4 +48,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Test-Windows
-        path: ../Test.zip
+        path: /home/runner/work/jv98289v890j/Test.zip
