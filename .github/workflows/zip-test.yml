@@ -8,13 +8,14 @@ jobs:
     - shell: bash
       run: pwd
     - uses: actions/checkout@master
-    - shell: bash
+    - name: Prepare release
+      shell: bash
       run: |
         cd ..
         mkdir Test
         touch Test/Test.bin
         chmod +x Test/Test.bin
-    - name: Archive Release
+    - name: Archive release
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: zip
@@ -31,13 +32,16 @@ jobs:
     steps:
     - shell: bash
       run: pwd
+    - shell: pwsh
+      run: dir
     - uses: actions/checkout@master
-    - shell: bash
+    - name: Prepare release
+      shell: bash
       run: |
         cd ..
         mkdir Test
         touch Test/Test.bin
-    - name: Archive Release
+    - name: Archive release
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: zip
