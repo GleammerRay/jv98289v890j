@@ -12,6 +12,7 @@ jobs:
       run: |
         mkdir Test
         touch Test/Test.bin
+        chmod +x Test/Test.bin
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.1
       with:
@@ -22,4 +23,25 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: Test
+        path: Test.zip
+  build-windows:
+    runs-on: windows-latest
+    steps:
+    - shell: bash
+      run: pwd
+    - uses: actions/checkout@master
+    - shell: bash
+      run: |
+        mkdir Test
+        touch Test/Test.bin
+    - name: Archive Release
+      uses: thedoctor0/zip-release@0.7.1
+      with:
+        type: zip
+        filename: Test.zip
+        path: Test
+    - name: Upload archive
+      uses: actions/upload-artifact@v3
+      with:
+        name: Test-Windows
         path: Test.zip
