@@ -33,7 +33,7 @@ jobs:
     - shell: bash
       run: pwd
     - shell: pwsh
-      run: dir
+      run: Get-Location
     - uses: actions/checkout@master
     - name: Prepare release
       shell: bash
