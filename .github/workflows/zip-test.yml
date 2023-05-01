@@ -15,6 +15,11 @@ jobs:
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.1
       with:
-        type: 'zip'
-        filename: 'Test.zip'
+        type: zip
+        filename: Test.zip
         path: Test
+    - name: Upload archive
+      uses: actions/upload-artifact@v3
+      with:
+        name: Test
+        path: Test.zip
