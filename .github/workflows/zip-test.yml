@@ -10,6 +10,7 @@ jobs:
     - uses: actions/checkout@master
     - shell: bash
       run: |
+        cd ..
         mkdir Test
         touch Test/Test.bin
         chmod +x Test/Test.bin
@@ -17,13 +18,14 @@ jobs:
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: zip
+        directory: ..
         filename: Test.zip
         path: Test
     - name: Upload archive
       uses: actions/upload-artifact@v3
       with:
         name: Test
-        path: Test.zip
+        path: ../Test.zip
   build-windows:
     runs-on: windows-latest
     steps:
@@ -32,16 +34,18 @@ jobs:
     - uses: actions/checkout@master
     - shell: bash
       run: |
+        cd ..
         mkdir Test
         touch Test/Test.bin
     - name: Archive Release
       uses: thedoctor0/zip-release@0.7.1
       with:
         type: zip
+        directory: ..
         filename: Test.zip
         path: Test
     - name: Upload archive
       uses: actions/upload-artifact@v3
       with:
         name: Test-Windows
-        path: Test.zip
+        path: ../Test.zip
