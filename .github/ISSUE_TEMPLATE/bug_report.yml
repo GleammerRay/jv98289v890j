@@ -15,7 +15,7 @@ body:
     id: bug-description
     attributes:
       label: Bug description
-      description: What went wrong? Please provide a full description of your problem.
+      description: What went wrong? Please provide a full description of your problem. You may provide image attachments.
   - type: textarea
     id: error-log
     attributes:
