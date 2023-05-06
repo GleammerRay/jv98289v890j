@@ -43,7 +43,7 @@ body:
       label: Submission checklist
       description: Please make sure that your issue meets the submission requirements.
       options:
-        - label: I have specified my problem in the issue title
+        - label: I have specified the problem in the issue title
           required: true
         - label: I have provided a verbose description of the problem
           required: true
