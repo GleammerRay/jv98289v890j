@@ -1,0 +1,15 @@
+name: New/edited localization file(s)
+description: Propose an addition/change to app localization files
+title: "[Localization]: "
+labels: ["localization"]
+assignees:
+  - GleammerRay
+body:
+  - type: checkboxes
+    id: submission-checklist
+    attributes:
+      label: Submission checklist
+      description: Please make sure that your issue meets the submission requirements
+      options:
+        - label: I have specified the localization language in the issue title
+          required: true
