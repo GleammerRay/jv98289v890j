@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a bug/error.
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - GleammerRay
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for filing a new bug report!
+        
+        If you have not found similar open/pinned issues at https://github.com/GlitterWare/Passy/issues then fully describe your problem and provide an error log if available. 
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug description
+      description: What went wrong? Please provide a full description of your problem.
+  - type: textarea
+    id: error-log
+    attributes:
+      label: Error log
+      description: If available, paste your error log here
+    render: dart
+  - type: checkboxes
+    id: submission-checklist
+    attributes:
+      label: Submission checklist
+      description: Please make sure that your issue meets the submission requirements.
+      options:
+        - label: I have specified my problem in the issue title
+          required: true
