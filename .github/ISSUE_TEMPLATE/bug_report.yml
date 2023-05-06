@@ -10,22 +10,22 @@ body:
       value: |
         Thank you for filing a new bug report!
         
-        If you have not found similar open/pinned issues at https://github.com/GlitterWare/Passy/issues then fully describe your problem and provide an error log if available. 
+        If you have not found similar open/pinned issues at https://github.com/GlitterWare/Passy/issues then fully describe the problem and provide an error log if available. 
   - type: textarea
     id: bug-description
     attributes:
       label: Bug description
-      description: What went wrong? Please provide a full description of your problem. You may provide image attachments.
+      description: What went wrong? Please provide a full description of the problem. You may provide image attachments.
   - type: textarea
     id: error-log
     attributes:
       label: Error log
-      description: If available, paste your error log here.
+      description: If available, paste the error log here.
   - type: dropdown
     id: app-version
     attributes:
       label: App version
-      description: Select your app version. You can find it in the app settings under the `About` section.
+      description: Select the app version. You can find it in the app settings under the `About` section.
       options:
         - v1.4.1 - Quality Patch
         - v1.4.0 - Sharing is Caring
@@ -41,7 +41,7 @@ body:
     id: submission-checklist
     attributes:
       label: Submission checklist
-      description: Please make sure that your issue meets the submission requirements.
+      description: Please make sure that this issue meets the submission requirements.
       options:
         - label: I have specified the problem in the issue title
           required: true
