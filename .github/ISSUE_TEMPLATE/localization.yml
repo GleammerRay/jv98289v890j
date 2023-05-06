@@ -27,7 +27,7 @@ body:
     id: submission-checklist
     attributes:
       label: Submission checklist
-      description: Please make sure that your issue meets the submission requirements.
+      description: Please make sure that this issue meets the submission requirements.
       options:
         - label: I have specified the localization language in the issue title
           required: true
