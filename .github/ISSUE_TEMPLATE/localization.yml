@@ -17,17 +17,17 @@ body:
     id: localization-link
     attributes:
       label: Localization link
-      description: Provide a link to your localization gist
+      description: Provide a link to your localization gist.
   - type: textarea
     id: localization-changes
     attributes:
       label: Localization changes
-      description: "If necessary, describe the changes you have made"
+      description: If necessary, describe the changes you have made.
   - type: checkboxes
     id: submission-checklist
     attributes:
       label: Submission checklist
-      description: Please make sure that your issue meets the submission requirements
+      description: Please make sure that your issue meets the submission requirements.
       options:
         - label: I have specified the localization language in the issue title
           required: true
