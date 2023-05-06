@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        We need your feedback to keep improving our app.
+        We need your feedback to keep improving our app!
         
         If you have not found similar open/pinned issues at https://github.com/GlitterWare/Passy/issues then fully describe your request.
   - type: textarea
