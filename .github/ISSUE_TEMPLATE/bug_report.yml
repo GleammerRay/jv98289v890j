@@ -17,11 +17,6 @@ body:
       label: Bug description
       description: What went wrong? Please provide a full description of the problem. You may provide image attachments.
   - type: textarea
-    id: error-log
-    attributes:
-      label: Error log
-      description: If available, paste the error log here.
-  - type: textarea
     id: expected
     attributes:
       label: Expected outcome
@@ -31,6 +26,11 @@ body:
     attributes:
       label: Steps to reproduce
       description: What were you trying to do when this happened?
+  - type: textarea
+    id: error-log
+    attributes:
+      label: Error log
+      description: If available, paste the error log here.
   - type: dropdown
     id: app-version
     attributes:
