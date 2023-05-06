@@ -23,20 +23,20 @@ body:
       description: If available, paste your error log here.
   - type: dropdown
     id: app-version
-    options:
-      - v1.4.1 - Quality Patch
-      - v1.4.0 - Sharing is Caring
-      - v1.3.1 - Windows Hotfix
-      - v1.3.0 - Bulletproof
-      - v1.2.0 - Automatic Backups
-      - v1.1.1 - Privacy Update
-      - v1.0.2 - Better Networking
-      - v1.0.1 - History Hotfix
-      - v1.0.0 - We're Open!
-      - Lower
     attributes:
       label: App version
-      description: Select your app version. You can find it in the app settings under the `About` section. 
+      description: Select your app version. You can find it in the app settings under the `About` section.
+      options:
+        - v1.4.1 - Quality Patch
+        - v1.4.0 - Sharing is Caring
+        - v1.3.1 - Windows Hotfix
+        - v1.3.0 - Bulletproof
+        - v1.2.0 - Automatic Backups
+        - v1.1.1 - Privacy Update
+        - v1.0.2 - Better Networking
+        - v1.0.1 - History Hotfix
+        - v1.0.0 - We're Open!
+        - v0.11.1 and lower
   - type: checkboxes
     id: submission-checklist
     attributes:
