@@ -29,3 +29,5 @@ body:
       options:
         - label: I have specified my problem in the issue title
           required: true
+        - label: I have provided a verbose description of the problem
+          required: true
