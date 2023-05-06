@@ -21,6 +21,16 @@ body:
     attributes:
       label: Error log
       description: If available, paste the error log here.
+  - type: textarea
+    id: expected
+    attributes:
+      label: Exp
+      description: What did you expect to happen?
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What were you trying to do when this happened?
   - type: dropdown
     id: app-version
     attributes:
