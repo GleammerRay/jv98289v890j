@@ -15,7 +15,7 @@ body:
     id: suggestion
     attributes:
       label: Suggestion
-      description: What do you want to be changed? Please provide as much information as possible to help us understand what you need.
+      description: What do you want to be changed? Please provide as much information as possible to help us understand what you need. You may provide image attachments.
   - type: checkboxes
     id: submission-checklist
     attributes:
