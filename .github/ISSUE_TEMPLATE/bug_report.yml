@@ -21,7 +21,7 @@ body:
     attributes:
       label: Error log
       description: If available, paste your error log here
-    render: dart
+      render: dart
   - type: checkboxes
     id: submission-checklist
     attributes:
